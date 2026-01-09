@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  min-height: 100vh;
+  margin: 0;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 50px;
+  background: lightseagreen;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  background: #4caf50;
+  color: beige;
+  border-radius: 4px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  color:black;
+  margin-top: 20px;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 10px;
+  background: beige;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Task text wrap properly */
+.task-list li span {
+  flex: 1;
+}
+
+/* Buttons alignment fix */
+.task-list li div {
+  display: flex;
+  align-items: center;
+}
+
+.task-list li div button {
+  margin-left: 5px;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: black;
+}
